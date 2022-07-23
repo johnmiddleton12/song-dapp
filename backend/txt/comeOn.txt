@@ -1,0 +1,26 @@
+function retrieve2(uint32 i) public {
+            for (uint32 j=0; j<50; j += 1) {
+                if (i == 0) {
+                    storageString = string(abi.encodePacked(storageString, PartA.GetPart(j)));
+                } else if (i == 1) {
+                    storageString = string(abi.encodePacked(storageString, PartB.GetPart(j)));
+                } else if (i == 2) {
+                    storageString = string(abi.encodePacked(storageString, PartC.GetPart(j)));
+                } else if (i == 3) {
+                    storageString = string(abi.encodePacked(storageString, PartD.GetPart(j)));
+                } else if (i == 4) {
+                    storageString = string(abi.encodePacked(storageString, PartE.GetPart(j)));
+                } else if (i == 5) {
+                    storageString = string(abi.encodePacked(storageString, PartF.GetPart(j)));
+                } else if (i == 6) {
+                    storageString = string(abi.encodePacked(storageString, PartG.GetPart(j)));
+                } else if (i == 7) {
+                    storageString = string(abi.encodePacked(storageString, PartH.GetPart(j)));
+                } else if (i == 8) {
+                    storageString = string(abi.encodePacked(storageString, PartI.GetPart(j)));
+                } else if (i == 9 && j < 37) {
+                    storageString = string(abi.encodePacked(storageString, PartJ.GetPart(j)));
+                }
+            }
+        
+    }

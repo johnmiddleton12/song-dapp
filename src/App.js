@@ -11,7 +11,8 @@ const NEW_POLYGON_ABI = [
     "function setFilePart(string, uint32, string) public",
     "function getFilePart(string memory fileName, uint32 partIndex) public view returns (string memory)",
     "function addNewFile(string memory fileName, uint32 fileParts) public returns (bool)",
-    "function getFileLength(string memory fileName) public view returns (uint256)"
+    "function getFileLength(string memory fileName) public view returns (uint256)",
+    "function getFiles() public view returns (string)"
 ]
 
 function App() {
@@ -184,6 +185,8 @@ function App() {
         <br />
         <button className="button-4" onClick={calculateGasCost}>Calculate Gas Cost</button>
         <button className="button-4" onClick={uploadFile}>Upload File</button>
+        <button className="button-4" onClick={uploadFileBatched}>Upload File Batched</button>
+        <br />
         <p style={{fontSize: '15px'}}>
             Steps: <br />
             1. Upload file <br />
